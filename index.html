@@ -1,0 +1,63 @@
+<!-- 
+	Desenvolvido por: Rodrigo de Castro Vidigal - RA: 1801867-5
+	Sistema desenvolvido com o Sublime Text usando o Linux Mint 20.1. Testado no Linux e Windows 10 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MAPA - Programação Front End - Painel de Atendimento</title>
+	<link href="css/estilo.css" rel="stylesheet">
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		
+		<div id="cabecalho">	
+			
+			<div class="topo_E">
+				<img src="images/logo.png" class="Logo">
+			</div>
+			<div class="topo_D">
+				<h1>PAINEL DE ATENDIMENTO</h1>
+				<h2>Aguarde a Senha</h2>
+			</div>
+
+		</div>
+		
+		<div class="space"></div>
+
+		<div id="campo_senha">
+			
+			<p class="t-senha"><strong><span id="verSenha"></span></strong></p>
+			<p></p>
+			<p class="t-atendente"><span id="atend"></span></p>
+
+		</div>
+		
+		<div class="space"></div>		
+		
+		<div id="container2">
+			<div id="cliente" >
+				<p class="texto20"><strong>ÁREA DO CLIENTE:</strong></p>
+				<p>Escolha o tipo de Atendimento:</p>
+				<button onclick="btnComum()">Comum</button> <button onclick="btnRapido()">Rápido</button> <button onclick="btnPrioritario()">Prioritário</button><br /><br />
+				<p>Sua senha é: <span id="senhaCliente" class="texto20"></span></p>
+
+			</div>
+			<div class="f_esquerda">&nbsp;</div>
+			<div id="atendente">
+				<p class="texto20"><strong>ÁREA DO ATENDENTE:</strong></p>
+				<br />
+				<button onclick="btnAtd1()">Atendente 1</button> <button onclick="btnAtd2()">Atendente 2</button> <button onclick="btnAtd3()">Atendente 3</button> <button onclick="btnAtd4()">Atendente 4</button>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>	 
+			</div>	
+		</div>
+		
+		
+	</div>
+	
+	</body>
+</html>
